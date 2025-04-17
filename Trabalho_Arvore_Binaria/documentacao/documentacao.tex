@@ -1,0 +1,83 @@
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\title{Trabalho Prático: Árvore Binária}
+\author{Nome da Equipe \\ Centro Universitário UNA - Sete Lagoas}
+\date{Abril de 2025}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introdução}
+
+O presente trabalho tem como objetivo desenvolver um programa em Java que implemente uma árvore binária com suas principais funcionalidades. O sistema permite inserção e remoção de elementos, identificação de características da árvore e diferentes percursos. O objetivo é consolidar conhecimentos sobre estruturas de dados e programação orientada a objetos.
+
+\section{Implementação}
+
+\subsection{Estruturas de Dados}
+
+\begin{lstlisting}[language=Java, caption=Classe Node]
+public class Node {
+    int valor;
+    Node esquerda, direita;
+
+    public Node(int valor) {
+        this.valor = valor;
+        esquerda = direita = null;
+    }
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption=Classe BinaryTree]
+public class BinaryTree {
+    Node raiz;
+    // Métodos: inserir, buscar, percursos
+}
+\end{lstlisting}
+
+\subsection{Funcionalidades}
+
+- Inserção e Remoção de nós
+- Verificação de árvore cheia, completa ou estritamente binária
+- Impressão dos percursos
+- Grau de um nó
+- Nível da árvore
+- Busca de elemento
+
+\section{Testes Executados}
+
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Operação} & \textbf{Entrada} & \textbf{Saída esperada} \\
+\hline
+Inserção & 10, 5, 20 & Árvore com 3 nós \\
+Busca de elemento & 5 & Encontrado \\
+Verificar se é completa & Após inserção & True \\
+Grau do nó 10 & 10 & Grau = 2 \\
+Nível da árvore & - & Nível = 2 \\
+\hline
+\end{tabular}
+
+\section{Conclusão}
+
+A implementação da árvore binária consolidou conceitos de estrutura de dados e OOP. As dificuldades enfrentadas incluíram a remoção e verificação das propriedades da árvore.
+
+\section{Bibliografia}
+
+\begin{itemize}
+    \item Jovana, S. (2019). \textit{Referências bibliográficas da ABNT}. Acessado em 04/04/2025.
+    \item Team, O. (2025). \textit{Overleaf}. Acessado em 04/04/2025.
+\end{itemize}
+
+\end{document}
